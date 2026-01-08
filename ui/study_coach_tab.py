@@ -6,7 +6,7 @@ from core.study_coach.weakness_detector import detect_weakness
 from core.study_coach.motivator_agent import motivate_user
 
 def show_study_coach(llm):
-    st.header("🎯 Personal Study Coach")
+    st.header(" Personal Study Coach")
     st.write("I'm your AI study buddy! I'll help you plan, learn, test yourself, and stay motivated.")
 
     if "study_topic" not in st.session_state:
@@ -21,7 +21,6 @@ def show_study_coach(llm):
 
     topic = st.text_input(
         "What do you want to learn today?",
-        value=st.session_state.study_topic,
         placeholder="e.g., Python loops, World War II, Calculus"
     )
 
@@ -77,7 +76,7 @@ def show_study_coach(llm):
                 st.markdown("**Feedback:**")
                 st.write(feedback)
 
-                if any(word in feedback.lower() for word in ["wrong", "incorrect", "mistake"]):
+                if any(word in feedback.lower() for word in ["wrong", "incorrect", "mistake","unfortunately"]):
                     with st.spinner("Finding weak areas..."):
                         weakness = detect_weakness(
                             llm,

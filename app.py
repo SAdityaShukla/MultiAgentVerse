@@ -59,26 +59,26 @@ else:
 
 
     with col1:
-        if st.button("📚 Exam Ready Material", use_container_width=True, type="primary"):
+        if st.button(" Exam Ready Material", use_container_width=True, type="primary"):
             st.session_state.current_task = "exam_ready"
             st.rerun()
 
 
     with col2:
-        if st.button("⚖️ Decision Maker", use_container_width=True, type="primary"):
+        if st.button(" Decision Maker", use_container_width=True, type="primary"):
             st.session_state.current_task = "decision_maker"
             st.rerun()
 
 
     with col3:
-        if st.button("🎯 Study Coach", use_container_width=True, type="primary"):
+        if st.button(" Study Coach", use_container_width=True, type="primary"):
             st.session_state.current_task = "study_coach"
             st.rerun()
 
 
 
     with col4:
-        if st.button("🔍 Code Review & Refactor", use_container_width=True, type="primary"):
+        if st.button(" Code Review & Refactor", use_container_width=True, type="primary"):
             st.session_state.current_task = "code_review"
             st.rerun()
 
@@ -86,7 +86,7 @@ else:
 
     col_center = st.columns([1, 2, 1])[1]  
     with col_center:
-        if st.button("✨ Creative Studio", use_container_width=True, type="primary"):
+        if st.button(" Creative Studio", use_container_width=True, type="primary"):
             st.session_state.current_task = "creative_studio"
             st.rerun()
 
