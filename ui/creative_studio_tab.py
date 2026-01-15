@@ -20,7 +20,7 @@ def show_creative_studio(llm):
         with st.spinner("Generating ideas..."):
             ideas = generate_ideas(llm, user_idea)
 
-        st.markdown("### 🌟 Brainstormed Ideas")
+        st.markdown("###  Brainstormed Ideas")
         st.write(ideas)
 
         st.markdown("###  Full Story")

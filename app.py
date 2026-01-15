@@ -44,7 +44,7 @@ if "current_task" in st.session_state and st.session_state.current_task:
 
     elif task == "code_review":
         from ui.code_review_tab import show_code_review
-        show_code_review(llm,embeddings)
+        show_code_review(llm)
 
     elif task == "creative_studio":
         from ui.creative_studio_tab import show_creative_studio
